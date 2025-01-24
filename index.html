@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Reservation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Flight Reservation</h1>
+
+  <div class="container">
+    <!-- Search Form -->
+    <div id="search-section">
+      <h2>Search Flights</h2>
+      <input type="text" id="from" placeholder="From" required />
+      <input type="text" id="to" placeholder="To" required />
+      <input type="date" id="date" required />
+      <button class="btn" onclick="searchFlights()">Search Flights</button>
+    </div>
+
+    <!-- Flight List -->
+    <div id="flights-section" class="hidden">
+      <h2>Available Flights</h2>
+      <div id="flights-container"></div>
+      <button class="btn" onclick="goBackToSearch()">Back to Search</button>
+    </div>
+
+    <!-- Passenger Details Form -->
+    <div id="passenger-section" class="hidden">
+      <h2>Passenger Details</h2>
+      <input type="text" id="passenger-name" placeholder="Name" required />
+      <input type="email" id="passenger-email" placeholder="Email" required />
+      <input type="tel" id="passenger-phone" placeholder="Phone" required />
+      <button class="btn" onclick="submitPassengerDetails()">Submit</button>
+      <button class="btn" onclick="goBackToFlights()">Back to Flights</button>
+    </div>
+
+    <!-- Booking Confirmation -->
+    <div id="confirmation-section" class="hidden">
+      <h2>Booking Confirmation</h2>
+      <p id="confirmation-details"></p>
+      <button class="btn" onclick="startNewSearch()">Book Another Flight</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
