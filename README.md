@@ -15,3 +15,7 @@
   The flighs looks like the :-
 </h4>
 <img src = "tickets.png">
+<h4>
+  The ticket looks like the :-
+</h4>
+<img stc = "ticket.png">
