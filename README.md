@@ -11,3 +11,7 @@
   The intrface looks like :-
 </h4>
 <img src = "interface.png">
+<h4>
+  The flighs looks like the :-
+</h4>
+<img src = "tickets.png">
